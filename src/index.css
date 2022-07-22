@@ -1,0 +1,43 @@
+body {
+  --cell-color: #fff;
+  --cell-size: 20px;
+
+  margin: 0;
+  padding: 0;
+  background: #0E1219;
+  color: #fff;
+  height: 100vh;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 90vh;
+}
+
+.cell {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: var(--cell-size);
+  height: var(--cell-size);
+}
+
+.cell.alive {
+  background-color: var(--cell-color);
+}
+
+.cell.dead {
+  background-color: transparent;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+
+.controls .control {
+  margin: 0 .5rem;
+}
